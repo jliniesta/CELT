@@ -1,0 +1,33 @@
+
+# Fichero de asociaciones del modulo principal (main)
+# ---------------------------------------------------
+
+# Reloj principal del sistema
+
+NET "CLK" LOC = "M6"; # Seal de reloj del sistema de XTAL
+
+# RESET
+
+NET "RESET" LOC = "G12"; # Reset manual
+
+# Conexiones de los DISPLAYS
+
+NET "SEG7<0>" LOC = "L14"; # seal = CA
+NET "SEG7<1>" LOC = "H12"; # Seal = CB
+NET "SEG7<2>" LOC = "N14"; # Seal = CC
+NET "SEG7<3>" LOC = "N11"; # Seal = CD
+NET "SEG7<4>" LOC = "P12"; # Seal = CE
+NET "SEG7<5>" LOC = "L13"; # Seal = CF
+NET "SEG7<6>" LOC = "M12"; # Seal = CG
+NET "SEG7<7>" LOC = "N13"; # Seal = CP 
+
+# Seales de activacion de los displays
+
+NET "AN<0>" LOC = "K14"; # Activacion del display 0 = AN0
+NET "AN<1>" LOC = "M13"; # Activacion del display 1 = AN1
+NET "AN<2>" LOC = "J12"; # Activacion del display 2 = AN2
+NET "AN<3>" LOC = "F12"; # Activacion del display 3 = AN3
+
+# Entrada externa donde se conecta la seal entrante
+
+NET "LIN" LOC="B2";
